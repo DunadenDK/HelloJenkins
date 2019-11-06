@@ -30,13 +30,7 @@
                     </includes>
                 </configuration>
             </plugin>
-                 <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit-platform -->
-                  <dependency>
-                      <groupId>io.qameta.allure</groupId>
-                      <artifactId>allure-junit-platform</artifactId>
-                      <version>2.0-BETA19</version>
-                  </dependency>
-
+          
         </plugins>
     </build>
 
@@ -46,6 +40,12 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.14.0</version>
+        </dependency>
+              <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit-platform -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit-platform</artifactId>
+            <version>2.0-BETA19</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -79,19 +79,6 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.11.1</version>
-        </dependency>
-              <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>2.13.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>2.0-BETA14</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
