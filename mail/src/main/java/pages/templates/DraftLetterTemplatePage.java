@@ -82,9 +82,6 @@ public class DraftLetterTemplatePage extends BasePage {
         letterAttributes = new ArrayList<>();
         String actualSubjectValue = subjectField.getAttribute("value");
         letterAttributes.add(actualSubjectValue);
-
-//        String actualBodyValue = mailBodyField.getText();
-//        letterAttributes.add(actualBodyValue);
         return letterAttributes.toString();
     }
 
