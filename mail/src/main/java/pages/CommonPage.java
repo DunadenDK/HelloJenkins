@@ -54,15 +54,13 @@ public class CommonPage extends BasePage {
     }
 
     public DraftsPage goToDraftsPage() throws InterruptedException {
-        Thread.sleep(2000);
-        WaitUtils.waitUntilVisibilityOfElementLocatedBy(driver,By.xpath(DRAFTS_FOLDER));
+        WaitUtils.waitUntilVisibilityOfElement(driver, draftsFolder);
         draftsFolder.click();
         return new DraftsPage();
     }
 
     public SentMailPage goToSentMailFolder() throws InterruptedException {
-        Thread.sleep(2000);
-        WaitUtils.waitUntilVisibilityOfElementLocatedBy(driver,By.xpath(SENT_MAIL_FOLDER));
+        WaitUtils.waitUntilVisibilityOfElement(driver, sentMailFolder);
         sentMailFolder.click();
         refreshCurrentPage();
         return new SentMailPage();
