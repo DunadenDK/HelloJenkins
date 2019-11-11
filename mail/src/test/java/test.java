@@ -9,8 +9,6 @@ public class test extends CommonConditions{
 
 
 
- //   protected Letter testLetter = LetterFieldsFiller.withDataFromProperty();
-
     @Test()
 
         public void loginToMailbox() throws InterruptedException {
@@ -27,11 +25,7 @@ public class test extends CommonConditions{
                     .openSentLetter()
                     .getLetterSubject();
 
-    //   Thread.sleep(10000);
-        new DraftLetterTemplatePage()
-                .closePopup();
-              //  .exitFromCurrentMailbox();
-
+ 
         }
 
     }
