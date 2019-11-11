@@ -15,7 +15,7 @@ import service.LetterFieldsFiller;
 import java.util.List;
 
 public class LoginSteps {
-   // protected Letter testLetter = LetterFieldsFiller.withDataFromProperty();
+
     DraftLetterTemplatePage draftLetterTemplate;
     CommonPage commonPage;
 
@@ -29,12 +29,6 @@ public class LoginSteps {
         new HomePage().userEnterCredentials();
     }
 
-//    @Then("^I'm logged into it$")
-//    public void checkUserIsLoggedIntoCorrectMailbox() {
-//        String actualMailboxName = new CommonPage().findTheNameOfMailboxYouAreLoggedInto();
-//        Assert.assertEquals(actualMailboxName, "denqa.test@mail.ru");
-//    }
-
     @And("^I create new letter$")
     public void userCreatesLetter() {
      draftLetterTemplate = new CommonPage().openTemplateForWritingNewLetter() .fillInLetterFields();
@@ -43,7 +37,6 @@ public class LoginSteps {
     public void userClosesLetterWithoutSaving() {
         commonPage = draftLetterTemplate.closeLetterWithoutSaving();
     }
-
 
     @Then("^I find this letter in a draft folder$")
     public void userChecksThatLetterIsSavedAsDraft() throws InterruptedException {
